@@ -79,11 +79,8 @@ int main(int, char**)
     //io.Fonts->AddFontFromFileTTF("../../misc/fonts/Cousine-Regular.ttf", 15.0f);
     //ImFont* font = io.Fonts->AddFontFromFileTTF("c:\\Windows\\Fonts\\ArialUni.ttf", 18.0f, nullptr, io.Fonts->GetGlyphRangesJapanese());
     //IM_ASSERT(font != nullptr);
-
-    // Our state
-    bool show_demo_window = true;
-    bool show_another_window = false;
-    ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
+ 
+    ImVec4 clear_color = ImVec4(0.0f, 0.0f, 0.0f, 1.00f);
 
     // Main loop
     bool done = false;
@@ -117,19 +114,14 @@ int main(int, char**)
         ImGui::NewFrame();
 
  
-        static float f = 0.0f;
-        static int counter = 0;
         static bool control = false;
         static bool control1 = false;
-        static bool control2 = false;
-        static bool control3 = false;
-        static bool control5 = false;
 
         ImGui::Begin("Hello, world!");                          // Create a window called "Hello, world!" and append into it.
 
         ImGui::Text("This is an anim demo");               // Display some text (you can use a format strings too)
-        custom::Checkbox("Hello World 4", &control3);
-        custom::CheckboxFade("Hello World 5", &control5);
+        custom::Checkbox("Hello World 4", &control);
+        custom::CheckboxFade("Hello World 5", &control1);
 
         ImGui::End();
       

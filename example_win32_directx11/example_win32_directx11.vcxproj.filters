@@ -9,53 +9,35 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\imconfig.h">
-      <Filter>imgui</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\imgui.h">
       <Filter>imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\imgui_internal.h">
-      <Filter>imgui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\backends\imgui_impl_win32.h">
-      <Filter>sources</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\backends\imgui_impl_dx11.h">
-      <Filter>sources</Filter>
     </ClInclude>
     <ClInclude Include="custom.h">
       <Filter>sources</Filter>
     </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h" />
+    <ClInclude Include="ImGui\imgui.h" />
+    <ClInclude Include="ImGui\imgui_internal.h" />
+    <ClInclude Include="ImGui\imstb_rectpack.h" />
+    <ClInclude Include="ImGui\imstb_textedit.h" />
+    <ClInclude Include="ImGui\imstb_truetype.h" />
+    <ClInclude Include="ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="ImGui\imgui_impl_win32.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\imgui.cpp">
-      <Filter>imgui</Filter>
-    </ClCompile>
     <ClCompile Include="main.cpp">
       <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\imgui_demo.cpp">
-      <Filter>imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\imgui_draw.cpp">
-      <Filter>imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\imgui_widgets.cpp">
-      <Filter>imgui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\backends\imgui_impl_win32.cpp">
-      <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\backends\imgui_impl_dx11.cpp">
-      <Filter>sources</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\imgui_tables.cpp">
-      <Filter>imgui</Filter>
     </ClCompile>
     <ClCompile Include="custom.cpp">
       <Filter>sources</Filter>
     </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp" />
+    <ClCompile Include="ImGui\imgui_demo.cpp" />
+    <ClCompile Include="ImGui\imgui_draw.cpp" />
+    <ClCompile Include="ImGui\imgui_tables.cpp" />
+    <ClCompile Include="ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\README.txt" />
@@ -65,7 +47,5 @@
     <None Include="..\..\misc\debuggers\imgui.natstepfilter">
       <Filter>imgui</Filter>
     </None>
-    <None Include="GlowEffectVertexShader.vert" />
-    <None Include="GlowEffectFragmentShader.frag" />
   </ItemGroup>
 </Project>
